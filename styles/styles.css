@@ -1,1 +1,44 @@
+:root {
+  --ff-main: "Inter", sans-serif;
+  --ff-accent: "Lexend Deca", sans-serif;
+  --fw-regular: 400;
+  --fw-bold: 700;
+  --fs-heading: 1.375rem;
+  --fs-highlight: 1.5rem;
+  --fs-copy: 0.938rem;
+  --fs-small: 0.75rem;
+  --heading-line-height: 2rem;
+  --copy-line-height: 1.563rem;
+  --stat-name-letter-spacing: 0.063rem;
+  --ty-heading: var(--fw-bold) var(--fs-heading)/var(--heading-line-height) var(--ff-main);
+  --ty-copy: var(--fw-regular) var(--fs-copy)/var(--copy-line-height) var(--ff-main);
+  --ty-stat-value: var(--fw-bold) var(--fs-highlight) var(--ff-main);
+  --ty-stat-name: var(--fw-regular) var(--fs-small)/var(--copy-line-height) var(--ff-accent);
+  --cl-white: hsl(0, 0%, 100%);
+  --cl-dark: hsl(0, 0%, 100%);
+  --cl-desaturated: hsl(0, 0%, 100%);
+  --cl-pale: hsla(0, 0%, 100%, 0.75);
+  --cl-light: hsla(0, 0%, 100%, 0.6);
+  --cl-accent: hsl(277, 64%, 61%);
+}
+@media (min-width: 60rem) {
+  :root {
+    --fs-heading: 2.25rem;
+    --heading-line-height: 2.75rem;
+  }
+}
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+  font-style: italic;
+}
 /*# sourceMappingURL=./styles.css.map */
