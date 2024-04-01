@@ -6,7 +6,7 @@
 	--fw-regular: 400;
 	--fw-bold: 700;
 
-	--fs-heading: 1.375rem;
+	--fs-heading: 1.75rem;
 	--fs-highlight: 1.5rem;
 	--fs-copy: .938rem;
 	--fs-small: .75rem;
@@ -70,18 +70,25 @@ img {
 	margin: auto;
 	background: var(--cl-desaturated);
 	border-radius: .5rem;
+	text-align: center;
+}
+
+.stats-card__image-wrapper {
+	display: block;
+	overflow: hidden;
+	margin: 0 0 2.5rem;
+	border-radius: .5rem .5rem 0 0;
+	background: var(--cl-accent);
 }
 
 .stats-card__image {
-	border-radius: .5rem .5rem 0 0;
-	display: block;
-	overflow: hidden;
+	mix-blend-mode: multiply;
 }
 
 .stats-card__title {
 	font: var(--ty-heading);
 	color: var(--cl-white);
-	margin: 0;
+	margin: 0 0 1rem;
 	padding: 0 2rem;
 }
 
@@ -90,13 +97,14 @@ img {
 }
 
 .stats-card__copy {
-	margin: 0;
+	margin: 0 0 2.5rem;
 	padding: 0 2rem;
 }
 
 .stats-card__stats {
 	display: flex;
 	flex-direction: column;
+	gap: 1.5rem;
 	margin: 0 0 2rem;
 	padding: 0 2rem;
 }
@@ -107,6 +115,7 @@ img {
 	text-transform: uppercase;
 	display: flex;
 	flex-direction: column;
+	gap: .25rem;
 	letter-spacing: .063rem;
 }
 
