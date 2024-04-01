@@ -64,10 +64,56 @@ img {
 }
 
 .stats-card {
+	display: grid;
 	width: 90%;
 	max-width: 20.438rem;
 	margin: auto;
 	background: var(--cl-desaturated);
+	border-radius: .5rem;
+}
+
+.stats-card__image {
+	border-radius: .5rem .5rem 0 0;
+	display: block;
+	overflow: hidden;
+}
+
+.stats-card__title {
+	font: var(--ty-heading);
+	color: var(--cl-white);
+	margin: 0;
+	padding: 0 2rem;
+}
+
+.stats-card__title-highlight {
+	color: var(--cl-accent);
+}
+
+.stats-card__copy {
+	margin: 0;
+	padding: 0 2rem;
+}
+
+.stats-card__stats {
+	display: flex;
+	flex-direction: column;
+	margin: 0 0 2rem;
+	padding: 0 2rem;
+}
+
+.stats-card__stat-item {
+	font: var(--ty-stat-name);
+	color: var(--cl-light);
+	text-transform: uppercase;
+	display: flex;
+	flex-direction: column;
+	letter-spacing: .063rem;
+}
+
+.stats-card__stat-value {
+	font: var(--ty-stat-value);
+	color: var(--cl-white);
+	text-transform: initial;
 }
 
 .signature {
