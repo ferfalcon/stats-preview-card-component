@@ -110,6 +110,7 @@ img {
 @media (min-width: 64rem) {
   .stats-card__copy {
     grid-column: 1/2;
+    margin: 0;
     padding: 0 7rem 0 4.5rem;
   }
 }
